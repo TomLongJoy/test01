@@ -5,6 +5,9 @@ import SanGuo from "@/views/SanGuoYanYi";
 import WeiG from "@/views/Wei";
 import ShuG from "@/views/Shu";
 import WuG from "@/views/Wu";
+import Father from "@/views/methods/Father"
+import Sun from "@/views/methods/Sun"
+
 Vue.use(Router);
 export default new Router({
   routes: [
@@ -33,6 +36,16 @@ export default new Router({
       path: "/wu",
       name: "wu",
       component: WuG
+    },
+    {
+      path: "/father",
+      name: "father",
+      component: Father
+    },
+    {
+      path: "/sun",
+      name: "sun",
+      component: Sun
     }
   ]
 });

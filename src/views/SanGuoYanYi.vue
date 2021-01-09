@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h2>这个是三国的首页</h2>
+    <h2>这个是三国的首页 （网络请求）</h2>
     <button @click="weiClick()">魏国</button>
     <button @click="shuClick()">蜀国</button>
     <button @click="wuClick()">吴国</button>
     <button @click="baiduClick()">请求百度</button>
-    <!-- <router-view/> -->
+    <router-view/>
   </div>
 </template>
 
@@ -36,8 +36,10 @@ export default {
     },
     wuClick(){
       // this.$router.push('/wu');
+      var good = '你好';
+      var json = JSON.parse(good);
       requestApi.login.groupAccountLogin().then(res=>{
-        console.log(res);
+        console.log(good);
       });
     },
     baiduClick(){
