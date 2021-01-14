@@ -58,7 +58,7 @@ export function post(url, params) {
         reject(err);
       });
   });
-}
+};
 
 //TODO get请求
 export function get(url, params) {
@@ -74,4 +74,4 @@ export function get(url, params) {
         reject(err);
       });
   });
-}
+};

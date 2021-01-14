@@ -26,6 +26,15 @@ module.exports = {
           "^/api/baidu": ""
         },
         logLevel: "debug"
+      },
+      "/api/mess":{
+        target:"http://user.ddsaas.cn/",
+        changeOrigin: true,
+        secure:false,//只有代理https 地址需要次选项
+        pathRewrite: {
+          "^/api/mess": ""
+        },
+        logLevel: "debug"
       }
 
     },

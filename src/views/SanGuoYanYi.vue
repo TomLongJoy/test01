@@ -36,10 +36,9 @@ export default {
     },
     wuClick(){
       // this.$router.push('/wu');
-      var good = '你好';
-      var json = JSON.parse(good);
+      
       requestApi.login.groupAccountLogin().then(res=>{
-        console.log(good);
+        console.log(res);
       });
     },
     baiduClick(){

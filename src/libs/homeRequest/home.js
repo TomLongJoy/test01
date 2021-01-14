@@ -12,5 +12,11 @@ export default {
   //退出
   logout(param) {
     return post("/group/account/logout", param);
+  },
+//http://user.ddsaas.cn/userplat/1_0/userPlat/app/smallProgram/yzm.do
+  getSmsMessage(param){
+    return post("/api/mess/userplat/1_0/userPlat/app/smallProgram/yzm.do",param);
+
   }
+
 };
